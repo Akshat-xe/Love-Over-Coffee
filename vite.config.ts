@@ -2,11 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  // Base path: '/LoveOverCoffeeIndoor/' for GitHub Pages production build,
-  // '/' for local development.
-  base: mode === "production" ? "/LoveOverCoffeeIndoor/" : "/",
+export default defineConfig(() => ({
+  base: "/",
   server: {
     host: "::",
     port: 8080,
