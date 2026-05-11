@@ -1,34 +1,3 @@
-# Dependencies
-node_modules/
-.npm
-
-# Build output
-dist/
-dist-ssr/
-
-# Env files
-.env
-.env.local
-.env.*.local
-
-# Editor
-.vscode/
-.idea/
-*.sw?
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Logs
 *.log
-npm-debug.log*
-
-# TypeScript build info
-*.tsbuildinfo
-
-# Vite
-.vite/
-
-# Photos folder (contains only URL reference txt files, not actual images)
-photos/

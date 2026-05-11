@@ -1,76 +1,606 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#2d1f12" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#3d2410" />
+  <title>Love Over Coffee — Premium Vegetarian Café in Vijay Nagar, Indore</title>
+  <meta name="description" content="Love Over Coffee — a cozy vegetarian café in Vijay Nagar, Indore. Rated 4.8★ on Google. Specialty coffee, frappes, pizzas, sandwiches & desserts. Open 9:30 AM–12:30 AM daily." />
+  <meta name="keywords" content="Love Over Coffee, café Indore, Vijay Nagar café, vegetarian café Indore, best café Indore, Biscoff Cappuccino, Tiramisu Frappe, specialty coffee Indore" />
+  <meta property="og:title" content="Love Over Coffee — Premium Vegetarian Café in Vijay Nagar, Indore" />
+  <meta property="og:description" content="Specialty coffee, frappes, pizzas & desserts. Rated 4.8★. Open 9:30 AM–12:30 AM. Vijay Nagar, Indore." />
+  <meta property="og:type" content="restaurant" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <title>Love Over Coffee — Premium Vegetarian Café in Vijay Nagar, Indore</title>
-    <meta name="description" content="Love Over Coffee is a premium vegetarian café in Vijay Nagar, Indore. Rated 4.8/5 on Google (805+ reviews). Specialty coffee, signature frappes, pizzas, sandwiches & desserts. Open 9:30 AM–12:30 AM daily." />
-    <meta name="keywords" content="Love Over Coffee, café Indore, Vijay Nagar café, vegetarian café Indore, best café Indore, coffee shop Indore, Biscoff Cappuccino, Tiramisu Frappe, specialty coffee Indore" />
-    <meta name="author" content="Love Over Coffee" />
-    <meta name="robots" content="index, follow" />
+<!-- ══ NAVBAR ══════════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="assets/logo.png" alt="Love Over Coffee" class="nav-logo-img" />
+      <div class="nav-logo-text">
+        <span class="nav-brand">Love Over Coffee</span>
+        <span class="nav-sub">Vijay Nagar · Indore</span>
+      </div>
+    </a>
+    <div class="nav-rating">
+      <span class="stars">★★★★<span class="star-half">★</span></span>
+      <strong>4.8</strong><span class="nav-rating-sub">· 805 reviews</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#home">Home</a><a href="#highlights">Highlights</a>
+      <a href="#menu">Menu</a><a href="#about">About</a>
+      <a href="#gallery">Gallery</a><a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-ctas">
+      <a href="tel:+919329697769" class="nav-call">📞 Call</a>
+      <a href="https://www.zomato.com/indore/love-over-coffee-vijay-nagar/order" target="_blank" rel="noopener noreferrer" class="btn-zomato nav-order">Order Now</a>
+    </div>
+    <button id="nav-hamburger" aria-label="Open menu" class="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Love Over Coffee — Premium Vegetarian Café in Vijay Nagar, Indore" />
-    <meta property="og:description" content="Specialty coffee, signature frappes, pizzas, sandwiches & desserts. Rated 4.8★ on Google. Open 9:30 AM–12:30 AM. Vijay Nagar, Indore." />
-    <meta property="og:type" content="restaurant" />
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:site_name" content="Love Over Coffee Indore" />
+<div id="drawer-backdrop"></div>
+<div id="mobile-drawer">
+  <div class="drawer-header">
+    <div class="drawer-logo">
+      <img src="assets/logo.png" alt="Love Over Coffee" />
+      <div><span class="drawer-brand">Love Over Coffee</span><span class="drawer-sub">Vijay Nagar · Indore</span></div>
+    </div>
+    <button id="drawer-close" aria-label="Close">✕</button>
+  </div>
+  <div class="drawer-rating">
+    <span class="stars">★★★★<span class="star-half">★</span></span>
+    <strong>4.8</strong><span>· 805 Google reviews</span>
+  </div>
+  <nav class="drawer-nav">
+    <a href="#home">Home <span>›</span></a>
+    <a href="#highlights">Highlights <span>›</span></a>
+    <a href="#menu">Menu <span>›</span></a>
+    <a href="#about">About <span>›</span></a>
+    <a href="#gallery">Gallery <span>›</span></a>
+    <a href="#reviews">Reviews <span>›</span></a>
+    <a href="#contact">Contact <span>›</span></a>
+  </nav>
+  <div class="drawer-footer">
+    <p class="drawer-order-label">Order Online</p>
+    <a href="https://www.zomato.com/indore/love-over-coffee-vijay-nagar/order" target="_blank" rel="noopener noreferrer" class="btn-zomato drawer-cta">🛍 Order on Zomato</a>
+    <a href="https://www.swiggy.com/city/indore/love-over-coffee-vijay-nagar-rest764666?is_retargeting=true&media_source=GooglePlaceOrder" target="_blank" rel="noopener noreferrer" class="btn-swiggy drawer-cta">🛍 Order on Swiggy</a>
+    <a href="tel:+919329697769" class="btn-outline drawer-cta">📞 +91 93296 97769</a>
+  </div>
+</div>
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Love Over Coffee — Premium Café in Vijay Nagar, Indore" />
-    <meta name="twitter:description" content="Specialty coffee, signature frappes, pizzas & more. Rated 4.8★ on Google. Vijay Nagar, Indore." />
+<!-- ══ HERO ════════════════════════════════════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-coffee.jpg" alt="Premium coffee at Love Over Coffee Indore" fetchpriority="high" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="container hero-content">
+    <div class="hero-inner">
+      <div class="hero-badge reveal"><span class="badge-dot"></span>100% Vegetarian · Vijay Nagar, Indore</div>
+      <h1 class="hero-h1 reveal">Freshly Brewed. <em>Warmly Served.</em> Made for Conversations.</h1>
+      <p class="hero-desc reveal">A cozy vegetarian café in Vijay Nagar, Indore — serving specialty coffee, signature frappes, shakes, pizzas, sandwiches, desserts, and comfort food in a warm, stylish setting.</p>
+      <div class="hero-btns reveal">
+        <a href="#menu" class="btn-gold">Explore Menu</a>
+        <a href="#contact" class="btn-outline-cream">Reserve a Table</a>
+      </div>
+      <div class="hero-platforms reveal">
+        <a href="https://www.zomato.com/indore/love-over-coffee-vijay-nagar/order" target="_blank" rel="noopener noreferrer" class="btn-zomato">🛍 Order on Zomato</a>
+        <a href="https://www.swiggy.com/city/indore/love-over-coffee-vijay-nagar-rest764666?is_retargeting=true&media_source=GooglePlaceOrder" target="_blank" rel="noopener noreferrer" class="btn-swiggy">🛍 Order on Swiggy</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hero-stat"><span class="stat-num">4.8</span><span class="stat-stars">★★★★<span class="star-half">★</span></span><span class="stat-label">805 Google Reviews</span></div>
+        <div class="hero-stat"><span class="stat-num">100+</span><span class="stat-label">Menu Items</span></div>
+        <div class="hero-stat"><span class="stat-num">₹200–400</span><span class="stat-label">For Two</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
 
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CafeOrCoffeeShop",
-      "name": "Love Over Coffee - Indore (Vijay Nagar)",
-      "alternateName": "लव ओवर कॉफी - इंदौर",
-      "telephone": "+919329697769",
-      "priceRange": "₹200–400",
-      "servesCuisine": ["Coffee", "Vegetarian", "Pizza", "Pasta", "Sandwiches"],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Plot No 11, Scheme No 51, Scheme No 113",
-        "addressLocality": "Vijay Nagar, Indore",
-        "addressRegion": "Madhya Pradesh",
-        "postalCode": "452010",
-        "addressCountry": "IN"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "805",
-        "bestRating": "5"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "09:30",
-          "closes": "00:30"
-        }
-      ],
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Wheelchair Accessible", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Drive-Through", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Outdoor Seating", "value": true }
-      ],
-      "paymentAccepted": "Cash, Credit Card, Debit Card, Google Pay, UPI",
-      "currenciesAccepted": "INR",
-      "hasMenu": "#menu"
-    }
-    </script>
-  </head>
+<!-- ══ HIGHLIGHTS ══════════════════════════════════════════════════ -->
+<section id="highlights" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">What We're Loved For</span>
+      <h2>Our Highlights</h2>
+      <p>From beloved coffees to comfort food — the dishes our regulars can't stop ordering.</p>
+    </div>
+    <div class="filter-pills reveal">
+      <button class="filter-pill active" data-filter="All">All</button>
+      <button class="filter-pill" data-filter="Coffee">Coffee</button>
+      <button class="filter-pill" data-filter="Cold Coffee">Cold Coffee</button>
+      <button class="filter-pill" data-filter="Snacks">Snacks</button>
+      <button class="filter-pill" data-filter="Pizza">Pizza</button>
+      <button class="filter-pill" data-filter="Pasta">Pasta</button>
+      <button class="filter-pill" data-filter="Refreshers">Refreshers</button>
+    </div>
+    <div class="highlights-grid">
+      <div class="highlight-card featured reveal" data-category="Coffee"><div class="card-img-wrap"><img src="assets/menu/cappuccino.jpg" alt="Cappuccino" loading="lazy" /><span class="card-tag">Best Seller</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Coffee Favourite</span><span class="card-price">₹130</span></div><h3 class="card-name">Cappuccino</h3><p class="card-desc">Smooth, balanced espresso crowned with velvety airy foam — the soul of every coffee moment.</p></div></div>
+      <div class="highlight-card reveal" data-category="Coffee"><div class="card-img-wrap"><img src="assets/menu/biscoff-coffee.jpg" alt="Lotus Biscoff Coffee" loading="lazy" /><span class="card-tag tag-signature">Signature</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Coffee Favourite</span><span class="card-price">₹160</span></div><h3 class="card-name">Lotus Biscoff Coffee</h3><p class="card-desc">Warm cappuccino kissed with the caramelised crunch of Lotus Biscoff — rich, nostalgic, irresistible.</p></div></div>
+      <div class="highlight-card reveal" data-category="Cold Coffee"><div class="card-img-wrap"><img src="assets/menu/tiramisu-frappe.jpg" alt="Tiramisu Frappe" loading="lazy" /><span class="card-tag tag-musttry">Must Try</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Cold Coffee Bestseller</span><span class="card-price">₹200</span></div><h3 class="card-name">Tiramisu Frappe</h3><p class="card-desc">A dessert-like cold coffee layered with rich tiramisu depth and brownie chunks — pure indulgence.</p></div></div>
+      <div class="highlight-card reveal" data-category="Snacks"><div class="card-img-wrap"><img src="assets/menu/cheese-fondue.jpg" alt="Cheese Fondue" loading="lazy" /><span class="card-tag tag-chef">Chef Pick</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Comfort Special</span><span class="card-price">₹320</span></div><h3 class="card-name">Cheese Fondue</h3><p class="card-desc">Melted spiced cheese paired with crispy bread fingers — the café's most indulgent comfort pick.</p></div></div>
+      <div class="highlight-card reveal" data-category="Refreshers"><div class="card-img-wrap"><img src="assets/menu/lemon-mint-tea.jpg" alt="Lemon Mint Ice Tea" loading="lazy" /><span class="card-tag tag-popular">Popular</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Refreshing Cooler</span><span class="card-price">₹140</span></div><h3 class="card-name">Lemon Mint Ice Tea</h3><p class="card-desc">Crisp, cool, and refreshing with a citrusy lift and fresh mint — the perfect thirst quencher.</p></div></div>
+      <div class="highlight-card reveal" data-category="Cold Coffee"><div class="card-img-wrap"><img src="assets/menu/dark-choco-frappe.jpg" alt="Dark Chocolate Frappe" loading="lazy" /><span class="card-tag">Best Seller</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Cold Coffee Bestseller</span><span class="card-price">₹170</span></div><h3 class="card-name">Dark Chocolate Frappe</h3><p class="card-desc">Deep, decadent dark chocolate swirled into creamy cold coffee — bold, bittersweet, unforgettable.</p></div></div>
+      <div class="highlight-card reveal" data-category="Snacks"><div class="card-img-wrap"><img src="assets/menu/pao-bhaji-fondue.jpg" alt="Pao Bhaji Fondue" loading="lazy" /><span class="card-tag tag-chef">Chef Pick</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Comfort Special</span><span class="card-price">₹240</span></div><h3 class="card-name">Pao Bhaji Fondue</h3><p class="card-desc">A beloved Indian classic reimagined as a fondue — spiced bhaji with buttery pao for dipping.</p></div></div>
+      <div class="highlight-card reveal" data-category="Cold Coffee"><div class="card-img-wrap"><img src="assets/menu/cafe-frappe.jpg" alt="Café Frappe" loading="lazy" /><span class="card-tag tag-popular">Popular</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Cold Coffee Bestseller</span><span class="card-price">₹150</span></div><h3 class="card-name">Café Frappe</h3><p class="card-desc">Rich, creamy, and irresistibly smooth — the classic cold coffee that started it all.</p></div></div>
+      <div class="highlight-card reveal" data-category="Pasta"><div class="card-img-wrap"><img src="assets/menu/penne-pasta.jpg" alt="Penne Mix Sauce Pasta" loading="lazy" /><span class="card-tag tag-musttry">Must Try</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Pasta Favourite</span><span class="card-price">₹360</span></div><h3 class="card-name">Penne Mix Sauce Pasta</h3><p class="card-desc">Silky penne in a harmonious blend of tangy tomato and creamy white sauce with fresh herbs.</p></div></div>
+      <div class="highlight-card reveal" data-category="Pizza"><div class="card-img-wrap"><img src="assets/menu/tandoori-pizza.jpg" alt="Tandoori Paneer Pizza" loading="lazy" /><span class="card-tag tag-musttry">Must Try</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Pizza Must-Try</span><span class="card-price">₹360</span></div><h3 class="card-name">Tandoori Paneer Pizza</h3><p class="card-desc">Smoky tandoori paneer, capsicum and onion on a cheesy base with tandoori mayo.</p></div></div>
+      <div class="highlight-card reveal" data-category="Snacks"><div class="card-img-wrap"><img src="assets/menu/peri-peri-fries.jpg" alt="Peri Peri Fries" loading="lazy" /><span class="card-tag tag-popular">Popular</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Snack Pick</span><span class="card-price">₹180</span></div><h3 class="card-name">Peri Peri Fries</h3><p class="card-desc">Golden crispy fries dusted with fiery peri peri spices — addictive from the very first bite.</p></div></div>
+      <div class="highlight-card reveal" data-category="Pasta"><div class="card-img-wrap"><img src="assets/menu/penne-arrabiata.jpg" alt="Penne Arrabiata Red" loading="lazy" /><span class="card-tag tag-signature">Signature</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Pasta Favourite</span><span class="card-price">₹310</span></div><h3 class="card-name">Penne Arrabiata Red</h3><p class="card-desc">Spicy homemade tomato sauce with garlic heat and chilli flakes — Italian passion on a plate.</p></div></div>
+      <div class="highlight-card reveal" data-category="Snacks"><div class="card-img-wrap"><img src="assets/menu/grilled-sandwich.jpg" alt="Grilled Vegetable Sandwich" loading="lazy" /><span class="card-tag tag-popular">Popular</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Snack Pick</span><span class="card-price">₹160</span></div><h3 class="card-name">Grilled Vegetable Sandwich</h3><p class="card-desc">Fresh veggies and melted cheese pressed between toasted brown bread — warm, wholesome, satisfying.</p></div></div>
+      <div class="highlight-card reveal" data-category="Cold Coffee"><div class="card-img-wrap"><img src="assets/menu/double-choco-hazelnut.jpg" alt="Double Chocolate Hazelnut" loading="lazy" /><span class="card-tag tag-signature">Signature</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Cold Coffee Bestseller</span><span class="card-price">₹190</span></div><h3 class="card-name">Double Chocolate Hazelnut</h3><p class="card-desc">A decadent collision of dark chocolate and roasted hazelnut in every creamy sip.</p></div></div>
+      <div class="highlight-card reveal" data-category="Coffee"><div class="card-img-wrap"><img src="assets/menu/orange-espresso.jpg" alt="Orange Black Coffee Espresso" loading="lazy" /><span class="card-tag tag-signature">Signature</span><button class="like-btn">🤍</button></div><div class="card-body"><div class="card-meta"><span class="card-cat">Coffee Favourite</span><span class="card-price">₹140</span></div><h3 class="card-name">Orange Black Coffee Espresso</h3><p class="card-desc">Bold espresso meets fresh citrus — a surprisingly vibrant and refreshing twist on your daily shot.</p></div></div>
+    </div>
+  </div>
+</section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!-- ══ EXPERIENCE ═══════════════════════════════════════════════════ -->
+<section id="experience" class="section-pad experience-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow gold">The Experience</span>
+      <h2 class="cream">More Than Just a Café</h2>
+      <p class="cream-muted">From dine-in ambiance to doorstep delivery — every detail is crafted for your comfort.</p>
+    </div>
+    <div class="amenity-grid">
+      <div class="amenity-group group-espresso reveal"><h4>Service Modes</h4><div class="amenity-chips"><span class="chip">🍽 Dine-in</span><span class="chip">📦 Delivery</span><span class="chip">🛵 Takeaway</span><span class="chip">🚗 Drive-through</span><span class="chip">🛵 Kerbside Pickup</span><span class="chip">🛡 No-Contact Delivery</span></div></div>
+      <div class="amenity-group group-olive reveal"><h4>The Vibe</h4><div class="amenity-chips"><span class="chip">☕ Cozy</span><span class="chip">❤️ Romantic</span><span class="chip">⭐ Trendy</span><span class="chip">🌙 Late Night</span><span class="chip">🌿 Casual</span><span class="chip">⭐ Upmarket</span></div></div>
+      <div class="amenity-group group-amber reveal"><h4>Perfect For</h4><div class="amenity-chips"><span class="chip">👥 Groups</span><span class="chip">💻 Laptop Work</span><span class="chip">❤️ Date Night</span><span class="chip">👶 Kids Welcome</span><span class="chip">🎓 Students</span><span class="chip">🍽 Solo Dining</span></div></div>
+      <div class="amenity-group group-green reveal"><h4>Food &amp; Drinks</h4><div class="amenity-chips"><span class="chip">☕ Great Coffee</span><span class="chip">⭐ Great Desserts</span><span class="chip">🍵 Great Tea</span><span class="chip">🌙 Late-Night Food</span><span class="chip">🍟 Quick Bites</span><span class="chip">🌿 Vegetarian Only</span></div></div>
+      <div class="amenity-group group-tan reveal"><h4>Dining Options</h4><div class="amenity-chips"><span class="chip">☀️ Breakfast</span><span class="chip">🥐 Brunch</span><span class="chip">🍱 Lunch</span><span class="chip">🌙 Dinner</span><span class="chip">🍰 Dessert</span><span class="chip">🕛 Open till 12:30 AM</span></div></div>
+      <div class="amenity-group group-blue reveal"><h4>Payments</h4><div class="amenity-chips"><span class="chip">💳 Credit Cards</span><span class="chip">💳 Debit Cards</span><span class="chip">📱 Google Pay</span><span class="chip">📡 NFC Payments</span></div></div>
+      <div class="amenity-group group-slate reveal"><h4>Parking</h4><div class="amenity-chips"><span class="chip">🅿 Free Parking Lot</span><span class="chip">🚗 Free Street Parking</span><span class="chip">🚗 Plenty of Space</span></div></div>
+      <div class="amenity-group group-purple reveal"><h4>Accessibility</h4><div class="amenity-chips"><span class="chip">♿ Wheelchair Seating</span><span class="chip">♿ Accessible Toilet</span><span class="chip">👶 High Chairs</span><span class="chip">🍽 Kids' Menu</span></div></div>
+    </div>
+    <div class="experience-badges reveal">
+      <span class="exp-badge">🌿 100% Vegetarian</span>
+      <span class="exp-badge">🕙 Open 9:30 AM – 12:30 AM</span>
+      <span class="exp-badge">⭐ 4.8 Google Rating</span>
+      <span class="exp-badge">💳 All Payments Accepted</span>
+      <span class="exp-badge">🍽 Accepts Reservations</span>
+      <span class="exp-badge">📶 Free Wi-Fi</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MENU ═════════════════════════════════════════════════════════ -->
+<section id="menu" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Full Menu</span>
+      <h2>Everything We Make</h2>
+      <p>100+ items across 17 categories — all vegetarian, all made fresh.</p>
+    </div>
+    <div class="menu-search-wrap reveal">
+      <input type="search" id="menu-search" placeholder="Search menu items…" autocomplete="off" />
+    </div>
+    <div class="menu-tabs-wrap reveal">
+      <button class="menu-tabs-scroll" id="menu-tabs-scroll-l">‹</button>
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-cat="hot-coffee-black">Hot Coffee (Black)</button>
+        <button class="menu-tab" data-cat="hot-coffee-milk">Hot Coffee (With Milk)</button>
+        <button class="menu-tab" data-cat="signature-drinks">Signature Drinks</button>
+        <button class="menu-tab" data-cat="cold-coffee">Cold Coffee</button>
+        <button class="menu-tab" data-cat="ice-tea">Ice Tea &amp; Coolers</button>
+        <button class="menu-tab" data-cat="mocktails">Mocktails</button>
+        <button class="menu-tab" data-cat="shakes">Shake It Off</button>
+        <button class="menu-tab" data-cat="sandwiches">Sandwiches</button>
+        <button class="menu-tab" data-cat="wraps">Wraps</button>
+        <button class="menu-tab" data-cat="potato-shots">Potato Shots</button>
+        <button class="menu-tab" data-cat="loaded-fries">Loaded Fries</button>
+        <button class="menu-tab" data-cat="pizza">Pizza</button>
+        <button class="menu-tab" data-cat="nachos">Nachos</button>
+        <button class="menu-tab" data-cat="maggie">Maggie</button>
+        <button class="menu-tab" data-cat="pasta">Pasta</button>
+        <button class="menu-tab" data-cat="chef-special">Chef Special</button>
+        <button class="menu-tab" data-cat="desserts">Desserts</button>
+      </div>
+      <button class="menu-tabs-scroll" id="menu-tabs-scroll-r">›</button>
+    </div>
+
+    <div id="cat-hot-coffee-black" class="menu-category active"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Espresso</span><span class="mi-desc">60ML Full Flavoured Concentrated Foam Of Coffee</span></div><span class="mi-price">₹100</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Americano</span><span class="mi-desc">Espresso Shot Brewed With Hot Water</span></div><span class="mi-price">₹120</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Macchiato</span><span class="mi-desc">Espresso Shot Topped With Milk Foam</span></div><span class="mi-price">₹120</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Affogato</span><span class="mi-desc">Scoop Of Vanilla Gelato Drowned With A Shot Of Hot Espresso</span></div><span class="mi-price">₹130</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Iced Americano</span><span class="mi-desc">Espresso Shot Combined With Water And Chilled With Ice</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Irish Americano</span><span class="mi-desc">Espresso shot combined with Hot Water mixed with irish syrup</span></div><span class="mi-price">₹150</span></div>
+    </div></div>
+
+    <div id="cat-hot-coffee-milk" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cappuccino</span><span class="mi-desc">A Shot Of Espresso With Steamed Milk And Foam</span></div><span class="mi-price">₹130</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Café Latte</span><span class="mi-desc">A Shot Of Espresso With Steamed Milk And A Small Layer Of Foam</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Flat White</span><span class="mi-desc">Espresso Shot With Steamed Milk Layered With Very Thin Micro Foam</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Hot Chocolate</span><span class="mi-desc">A Blend Of Dark Chocolate With Hot Milk</span></div><span class="mi-price">₹150</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Hazelnut Cappuccino</span><span class="mi-desc">Creamy Cappuccino With The Mix Of Smooth Hazelnut Flavour</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Vanilla Cappuccino</span><span class="mi-desc">Cappuccino With The Combination Of Vanilla Flavour</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Tiramisu Cappuccino</span><span class="mi-desc">The World Famous Cake In The Form Of Coffee</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Irish Cappuccino</span><span class="mi-desc">Irish Flavour Mixed With Cappuccino</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Caramel Cappuccino</span><span class="mi-desc">Espresso Sweetened With Rich Caramel And Finished With Steamed Milk And Foam</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Popcorn Cappuccino</span><span class="mi-desc">A Bit Salty Tang Of Popcorn Flavour With Cappuccino</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Chocolate Cookie Cappuccino</span><span class="mi-desc">Tasty Combo Of Cappuccino And Cookies</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Café Mocha</span><span class="mi-desc">A Combination Of Rich Espresso With Chocolate Sauce And Steamed Milk</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Biscoff Cappuccino</span><span class="mi-desc">Tasty Combination of Cappuccino With Caramelised taste of Lotus Biscoff</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Double Shot Cappuccino</span><span class="mi-desc">A double shot of espresso with steamed milk and foam</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Signature Hot Chocolate</span><span class="mi-desc">Hot Chocolate With The Combination Of Hazelnut Flavour</span></div><span class="mi-price">₹170</span></div>
+    </div></div>
+
+    <div id="cat-signature-drinks" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Orange Espresso</span><span class="mi-desc">Orange With Espresso</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cranberry Espresso</span><span class="mi-desc">Cranberry With Espresso</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Condensed Latte</span><span class="mi-desc">Espresso with Condensed milk</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cold Brew</span><span class="mi-desc">Black — A Delicate &amp; Complete Drink</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Espresso Tonic</span><span class="mi-desc">Espresso, Tonic Water, Ice</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Vietnamese</span><span class="mi-desc">Cold Brew, Condensed milk, Ice</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Drip Vietnamese</span><span class="mi-desc">Live driped cold brew, condensed milk, ice</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cranberry Cold Brew</span><span class="mi-desc">Cranberry With Cold Brew</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Orange Cold Brew</span><span class="mi-desc">Orange With Cold Brew</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cold Brew Tonic</span><span class="mi-desc">Cold Brew With Tonic Water</span></div><span class="mi-price">₹220</span></div>
+    </div></div>
+
+    <div id="cat-cold-coffee" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Café Frappe</span><span class="mi-desc">Rich, Creamy And Irresistable Cold Coffee</span></div><span class="mi-price">₹150</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Iced Latte</span><span class="mi-desc">Rich Espresso And Cold Milk Served Over Ice</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Iced Cappuccino</span><span class="mi-desc">Espresso Mixed With Milk, Chocolate And Ice Cubes. Topped With Milk Froth</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Choco Frappe</span><span class="mi-desc">Café Frappe With Combination Of Chocolate Fudge</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Dark Chocolate Frappe</span><span class="mi-desc">Combination Of Dark Chocolate And Frappe</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Iced Mocha Frappe</span><span class="mi-desc">Espresso With Chocolate, Milk N Cream Over Ice</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Caramel Creamy Frappe</span><span class="mi-desc">Cafe Frappe With The Combination Of Caramel Flavour</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Oreo Frappe</span><span class="mi-desc">Oreo Cookies Blended With Ice Cream N Espresso Shot</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Irish Mocha Creamy Frappe</span><span class="mi-desc">Cafe Frappe Mixed With Irish N Chocolate Flavour</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mocha Hazelnut Frappe</span><span class="mi-desc">Blended With Chocolate And Hazelnut Flavour</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Tiramisu Frappe</span><span class="mi-desc">Brownie Chunks Blended With Amazing Tiramisu Flavour In Cold Coffee</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Popcorn Caramel Frappe</span><span class="mi-desc">Rich Combination Of Caramel And Popcorn Flavour In Frappe</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Choco Cookie Frappe</span><span class="mi-desc">Blend Of Espresso In Ice Cream N Secret Cookie</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cookie Crunchy Creamy Frappe</span><span class="mi-desc">Unique Flavour Of Hazelnut N Caramel With Chunks Cookies</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Nutella Frappe</span><span class="mi-desc">Nutella Blended With Espresso</span></div><span class="mi-price">₹250</span></div>
+    </div></div>
+
+    <div id="cat-ice-tea" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Fresh Lime Soda</span><span class="mi-desc">Refreshing water based sweet/salty drink</span></div><span class="mi-price">₹130</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Lemon Mint Ice Tea</span><span class="mi-desc">Refreshing lemon and mint iced tea</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Peach Ice Tea</span><span class="mi-desc">Sweet peach flavoured iced tea</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Watermelon Ice Tea</span><span class="mi-desc">Refreshing watermelon iced tea</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Strawberry Ice Tea</span><span class="mi-desc">Fruity strawberry iced tea</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Blueberry Ice Tea</span><span class="mi-desc">Rich blueberry flavoured iced tea</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Red Bull Ice Tea</span><span class="mi-desc">Energizing Red Bull iced tea</span></div><span class="mi-price">₹220</span></div>
+    </div></div>
+
+    <div id="cat-mocktails" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Virgin Mojito</span><span class="mi-desc">Refreshing Chilled Mint Mojito Flavour Made Using Syrup, Ice, Muddled Lemons N Mint Leaves</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Strawberry Slush</span><span class="mi-desc">Strawberry Flavour Blended With Crushed Ice</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Watermelon Punch</span><span class="mi-desc">Watermelon Flavour Refreshing Drink To Fight The Heat</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mango Mojito</span><span class="mi-desc">Mango, mint 'n' lime. The perfect refresher</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Green Apple Mojito</span><span class="mi-desc">Refreshing drink with green apple flavour</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cranberry Mojito</span><span class="mi-desc">Crisp, clean taste of cranberry with muddled lemon 'n' ice</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Pinky Lemonade</span><span class="mi-desc">Refreshing punch with watermelon and lychee flavour</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Gummy Gum</span><span class="mi-desc">A mix flavour of bubblegum 'n' cranberry juice</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Appi Cran Mocktini</span><span class="mi-desc">Tasty flavour of apple 'n' cranberry</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Blueberry Mango Mojito</span><span class="mi-desc">Delicious combination of blue berry 'n' mango</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Kiwi Mojito</span><span class="mi-desc">A refreshing flavour of mint, ice and kiwi</span></div><span class="mi-price">₹180</span></div>
+    </div></div>
+
+    <div id="cat-shakes" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Dark Chocolate Shake</span><span class="mi-desc">As Chocolaty As It Can Get!</span></div><span class="mi-price">₹150</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mango Shake</span><span class="mi-desc">You Cannot Buy Mango All The Time, But A Mango Shake</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Strawberry Shake</span><span class="mi-desc">The Strawberry Shake That You Deserve</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Caramel Creamy Shake</span><span class="mi-desc">Smoothness Of Caramel To Make You Droooooo!</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Oreo Shake</span><span class="mi-desc">You Want Oreo? We Got Oreo.</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Kit-Kat Shake</span><span class="mi-desc">A Shake That Deserves A Break! Blended And Topped With Kit Kat</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mango Berry Shake</span><span class="mi-desc">Combination Of Mango 'N' Strawberry, Served In One Glass</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Blueberry Shake</span><span class="mi-desc">Blueberry Flavour Blended With Vanilla Ice Cream</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Dark Chocolate Hazelnut Shake</span><span class="mi-desc">Chocolate Shake Flavoured With Hazelnut</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Passion Fruit Shake</span><span class="mi-desc">Different Flavours Blended To Perfection</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Bubble Gum Shake</span><span class="mi-desc">Deliciousness Of Bubblegum 'N' Strawberry</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Popcorn Caramel Shake</span><span class="mi-desc">Combination of Popcorn and Caramel Flavour</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Choco Brownie Shake</span><span class="mi-desc">Super Creamy, Super Chocolaty With Chunks Of Brownie</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mocha Berry Shake</span><span class="mi-desc">A Very Berry Delight Of Chocolate 'N' Strawberry</span></div><span class="mi-price">₹210</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Butter Scotch Caramel Shake</span><span class="mi-desc">Butterscotch Shake With Smoothness Of Caramel</span></div><span class="mi-price">₹210</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mango Oreo Crunch</span><span class="mi-desc">Flavours Of Mango With Oreo Cookie</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Biscoff Shake</span><span class="mi-desc">Deliciousnes of Biscoff Cookie Blend to Perfection</span></div><span class="mi-price">₹230</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Nutella Shake</span><span class="mi-desc">For The Nutella Lovers</span></div><span class="mi-price">₹240</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Ferrero Rocher Shake</span><span class="mi-desc">The Exclusive Shake Loaded With Ferrero Rocher 'N' Nutella</span></div><span class="mi-price">₹260</span></div>
+    </div></div>
+
+    <div id="cat-sandwiches" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Veg Grill Sandwich</span><span class="mi-desc">Tasty combination of onion, tomato and capsicum</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Veg Cheese Sandwich</span><span class="mi-desc">Onion, tomato, capsicum and cheese slice with brown bread</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Corn Sandwich</span><span class="mi-desc">A combination of cheese 'n' corn in two layers</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mushroom Sandwich</span><span class="mi-desc">Fantastic Combination of Saute Mushroom 'N' Onion With Cheese</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mexican Sandwich</span><span class="mi-desc">Bell peppers and onions with three different mayonnaise</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Veg Club Sandwich</span><span class="mi-desc">Fresh Lettuce, Coleslaw, Onion, Tomato, Cucumber, Cheese Slice</span></div><span class="mi-price">₹210</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Supreme Corn Sandwich</span><span class="mi-desc">Brown bread with onion, tomato, capsicum, corn &amp; cheese blend</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Tandoori Paneer Sandwich</span><span class="mi-desc">Paneer is an emotion. Try it to know what it tastes like</span></div><span class="mi-price">₹230</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">French Toast Sandwich</span><span class="mi-desc">French Toast Made Using Saute Vegetables and Different Mayonnaise in Masala Loaf</span></div><span class="mi-price">₹240</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Loaded Cheese &amp; Paneer Sandwich</span><span class="mi-desc">Loads of Cheese 'N' Mayo with Paneer and Onion in Masala Loaf</span></div><span class="mi-price">₹250</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Triple Cheese Sandwich</span><span class="mi-desc">Loaded with cheese, blended and placed between three slices of brown breads</span></div><span class="mi-price">₹280</span></div>
+    </div></div>
+
+    <div id="cat-wraps" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Aalo Tikki Wrap</span><span class="mi-desc">Twisty Aloo Filling With Veggies Wrap with saucy taste</span></div><span class="mi-price">₹170</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Paneer Tikka Wrap</span><span class="mi-desc">Toasted With Paneer Tikka, Capsicum, Onion, Chilli And Tandoori Dressing</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mexican Wrap</span><span class="mi-desc">Toasted With Dry Salsa, Beans, Corn, Grilled Paneer, Served With Dip</span></div><span class="mi-price">₹200</span></div>
+    </div></div>
+
+    <div id="cat-potato-shots" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Potato Wedges</span><span class="mi-desc">Skin-on Potato wedges coated with Special Seasoning &amp; herbs</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Pizza Samosa</span><span class="mi-desc">Delightful melty cheese in Pizza style Filling Samosas</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Potato Cheese Shots</span><span class="mi-desc">Potatoes, cheese &amp; herb seasoning coated in crunchy Golden breadcrumbs</span></div><span class="mi-price">₹200</span></div>
+    </div></div>
+
+    <div id="cat-loaded-fries" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">French Fries</span><span class="mi-desc">For You, If You're The 'Fries Before Guys' Kind</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Masala Fries</span><span class="mi-desc">A Spicy Treat by Chef Special</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Peri Peri Fries</span><span class="mi-desc">Fries Topped With Peri Peri Spices</span></div><span class="mi-price">₹180</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Stick</span><span class="mi-desc">Crumbed and fried process cheese sticks served with salsa sauce</span></div><span class="mi-price">₹190</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Chilli Mayo Fries</span><span class="mi-desc">Fries Topped with Chilli And Mayo Dressing</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheesy Salsa Fries</span><span class="mi-desc">Fries Topped With Cheese And Salsa Dressing</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Barbeque Fries</span><span class="mi-desc">Fries Topped With Tandoori And Chilli Dressing</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Jalapeno Fries</span><span class="mi-desc">Fries Topped With Cheese And Jalapeno Dressing</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Mexican Fries</span><span class="mi-desc">Fries Topped With Cheese, Mayo And Jalapeno Dressing</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Nachos Fries</span><span class="mi-desc">A Combination Of Fries And Nachos, Topped With Chilli And Plain Mayo</span></div><span class="mi-price">₹200</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Baked Fries</span><span class="mi-desc">Crispy French fries baked with cheese sauce and mozzarella cheese</span></div><span class="mi-price">₹230</span></div>
+    </div></div>
+
+    <div id="cat-pizza" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Margarita Pizza</span><span class="mi-desc">Classic Margarita, Home Made Tomato Sauce, Mozzarella And Evo</span></div><span class="mi-price">₹260</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Farm Fresh Pizza</span><span class="mi-desc">Tasty combination of onion, tomato and capsicum And Mozzarella</span></div><span class="mi-price">₹290</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Olive Garden Pizza</span><span class="mi-desc">Capsicum, jalapeno, black olive &amp; green olives goodness</span></div><span class="mi-price">₹300</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Supreme Pizza</span><span class="mi-desc">Green chilli, onion, tomato, capsicum and paneer with cheese blend</span></div><span class="mi-price">₹350</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Paneer Bhurji Pizza</span><span class="mi-desc">Spicy paneer bhurji on our traditional margarita</span></div><span class="mi-price">₹360</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Tandoori Paneer Pizza</span><span class="mi-desc">Cottage Cheese, Onion, Capsicum With Cheese Blend And Tandoori Mayonnaise</span></div><span class="mi-price">₹360</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Multi Cheese Nirmana</span><span class="mi-desc">Onion, Capsicum, Jalapeno And Sweet Corn With Blended Cheese And Jalapeno Cheese Sauce</span></div><span class="mi-price">₹380</span></div>
+    </div></div>
+
+    <div id="cat-nachos" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Plain Nachos</span><span class="mi-desc">Crispy Nachos Chips Served With Salsa Dip</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Nachos</span><span class="mi-desc">Chef's Special Nachos With Cheese And Bell Peppers</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Baked Nachos</span><span class="mi-desc">Nachos Loaded With Cheese, Baked Beans, Black Olives And Veggies</span></div><span class="mi-price">₹250</span></div>
+    </div></div>
+
+    <div id="cat-maggie" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Plain Maggie</span><span class="mi-desc">Simply maggie</span></div><span class="mi-price">₹120</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Masala Maggie</span><span class="mi-desc">Spicy Masaledar Maggie With Mixed Vegetables</span></div><span class="mi-price">₹140</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Tandoori Maggie</span><span class="mi-desc">Amazing Combination Of Tandoori Sauces With Maggie</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Creamy Maggie</span><span class="mi-desc">Maggie Sauteed In Chef's Secret Masala 'N' Mayo</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Maggie</span><span class="mi-desc">Masala Maggie Loaded With Cheese All Over</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Saute Maggie</span><span class="mi-desc">Maggie with Mushroom, Broccoli, Bell-Pepper</span></div><span class="mi-price">₹180</span></div>
+    </div></div>
+
+    <div id="cat-pasta" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Penne Arrabiata (Red)</span><span class="mi-desc">Spicy Homemade Tomato Sauce, Garlic And Chilly Flakes Served With Bread</span></div><span class="mi-price">₹310</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Alfredo Pasta (White)</span><span class="mi-desc">Penne pasta mixed with a silky smooth &amp; decadent white sauce</span></div><span class="mi-price">₹340</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Penne Pink Sauce</span><span class="mi-desc">Fresh Homemade Tomato Sauce And Fresh Cream Flavoured With Garlic And Basil</span></div><span class="mi-price">₹360</span></div>
+    </div></div>
+
+    <div id="cat-chef-special" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Spicy Hot Dog</span><span class="mi-desc">Spicy paneer bhurji on our hot dog bread</span></div><span class="mi-price">₹220</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Paneer Bhurji Pao</span><span class="mi-desc">Spicy paneer bhurji on traditional butter pao and cheese</span></div><span class="mi-price">₹240</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Cheese Fondue</span><span class="mi-desc">Bell pepper flavoured with Indian spices, cheese and crispy finger bread</span></div><span class="mi-price">₹320</span></div>
+    </div></div>
+
+    <div id="cat-desserts" class="menu-category"><div class="menu-items-grid">
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Hot Fudge With Brownie</span><span class="mi-desc">Delightful Brownie Topped with Melted Hot Chocolate</span></div><span class="mi-price">₹160</span></div>
+      <div class="menu-item"><span class="veg-dot"></span><div class="mi-info"><span class="mi-name">Oreo Brownie Sundae</span><span class="mi-desc">Scrumptious Brownie Topped with Oreo Cookies, Chocolate sauce and Ice Cream</span></div><span class="mi-price">₹180</span></div>
+    </div></div>
+
+    <div id="menu-search-all" class="menu-category">
+      <div class="menu-items-grid" id="search-all-grid"><!-- dynamically filtered --></div>
+      <p class="menu-empty" style="display:none">No items found. Try a different search.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ════════════════════════════════════════════════════════ -->
+<section id="about" class="section-pad about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images reveal">
+        <div class="about-img-main"><img src="assets/cafe-interior.jpg" alt="Love Over Coffee interior" loading="lazy" /></div>
+        <div class="about-img-overlay"><img src="assets/cafe-ambiance.jpg" alt="Cozy café ambiance" loading="lazy" /></div>
+        <div class="about-blob"></div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-eyebrow">Our Story</span>
+        <h2>Where Every Cup Tells a <em>Story</em></h2>
+        <p>Nestled in the heart of Vijay Nagar, Indore, Love Over Coffee is more than just a café — it's a feeling. A warm corner for late-night conversations, first dates, study marathons, and everything in between.</p>
+        <p>From handcrafted espresso to cheesy comfort bites, every item on our menu is made to bring people closer. We believe great coffee and warm spaces create the best memories.</p>
+        <div class="about-features">
+          <div class="about-feat"><span class="feat-icon">☕</span><h4>Specialty Coffee</h4><p>Carefully brewed espresso-based drinks crafted with precision and passion.</p></div>
+          <div class="about-feat"><span class="feat-icon">❤️</span><h4>Made with Love</h4><p>Every dish and drink is prepared fresh with quality ingredients and warmth.</p></div>
+          <div class="about-feat"><span class="feat-icon">🌿</span><h4>100% Vegetarian</h4><p>A fully vegetarian menu celebrating flavour without compromise.</p></div>
+          <div class="about-feat"><span class="feat-icon">👥</span><h4>For Everyone</h4><p>Couples, friends, students, remote workers — there's a spot for all.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALLERY ══════════════════════════════════════════════════════ -->
+<section id="gallery" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Our Space</span>
+      <h2>A Glimpse Inside</h2>
+      <p>Warm interiors, artful details, and a vibe that makes every visit feel like home.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item span2 reveal"><img src="assets/cafe-interior.jpg" alt="Love Over Coffee interior" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="assets/cafe-ambiance.jpg" alt="Café ambiance" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="assets/menu/cappuccino.jpg" alt="Cappuccino" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="assets/menu/tiramisu-frappe.jpg" alt="Tiramisu Frappe" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="assets/menu/cheese-fondue.jpg" alt="Cheese Fondue" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="assets/menu/tandoori-pizza.jpg" alt="Tandoori Pizza" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="assets/menu/penne-pasta.jpg" alt="Penne Pasta" loading="lazy" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ══════════════════════════════════════════════════════ -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Guest Reviews</span>
+      <h2>What Our Guests Say</h2>
+    </div>
+    <div class="rating-summary reveal">
+      <div class="rating-big"><span class="rating-num">4.8</span><div class="rating-stars">★★★★<span class="star-half">★</span></div><span class="rating-count">805 reviews</span></div>
+      <div class="rating-divider"></div>
+      <div class="rating-bars">
+        <div class="rbar"><span>5 stars</span><div class="rbar-track"><div class="rbar-fill" style="width:82%"></div></div><span>82%</span></div>
+        <div class="rbar"><span>4 stars</span><div class="rbar-track"><div class="rbar-fill" style="width:12%"></div></div><span>12%</span></div>
+        <div class="rbar"><span>3 stars</span><div class="rbar-track"><div class="rbar-fill" style="width:4%"></div></div><span>4%</span></div>
+        <div class="rbar"><span>2 stars</span><div class="rbar-track"><div class="rbar-fill" style="width:1%"></div></div><span>1%</span></div>
+        <div class="rbar"><span>1 star</span><div class="rbar-track"><div class="rbar-fill" style="width:1%"></div></div><span>1%</span></div>
+      </div>
+      <div class="rating-divider"></div>
+      <div class="rating-google"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/64px-Google_%22G%22_Logo.svg.png" alt="Google" /><span>Verified on<br />Google Maps</span></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal"><span class="review-quote">❝</span><p>"The Biscoff Cappuccino is a game-changer! Warm ambiance, great music, and the coziest vibes. Our go-to spot for weekend evenings."</p><div class="review-footer"><span class="review-avatar" style="background:#3d4c2b">PS</span><div><strong>Priya S.</strong><div class="review-meta"><span class="review-stars">★★★★★</span><span>2 weeks ago</span></div></div></div></div>
+      <div class="review-card reveal"><span class="review-quote">❝</span><p>"Best café in Vijay Nagar, hands down. The Tiramisu Frappe and Cheese Fondue are absolutely divine. Staff is super friendly."</p><div class="review-footer"><span class="review-avatar" style="background:#3d2410">AM</span><div><strong>Arjun M.</strong><div class="review-meta"><span class="review-stars">★★★★★</span><span>1 month ago</span></div></div></div></div>
+      <div class="review-card reveal"><span class="review-quote">❝</span><p>"Love the aesthetic and the menu variety. The Tandoori Paneer Pizza is a must-try. Perfect for a date night or catching up with friends."</p><div class="review-footer"><span class="review-avatar" style="background:#c9a87a;color:#3d2410">SR</span><div><strong>Sneha R.</strong><div class="review-meta"><span class="review-stars">★★★★</span><span>3 weeks ago</span></div></div></div></div>
+      <div class="review-card reveal"><span class="review-quote">❝</span><p>"As a remote worker, this is my office now. Great Wi-Fi, amazing cold coffee, and they never rush you. The Peri Peri Fries are addictive!"</p><div class="review-footer"><span class="review-avatar" style="background:#3d4c2b">VT</span><div><strong>Vikram T.</strong><div class="review-meta"><span class="review-stars">★★★★★</span><span>1 week ago</span></div></div></div></div>
+      <div class="review-card reveal"><span class="review-quote">❝</span><p>"Visited for the first time and instantly became a regular. The Dark Chocolate Frappe is pure indulgence. 10/10 recommend!"</p><div class="review-footer"><span class="review-avatar" style="background:#d97706">AK</span><div><strong>Ananya K.</strong><div class="review-meta"><span class="review-stars">★★★★★</span><span>5 days ago</span></div></div></div></div>
+      <div class="review-card reveal"><span class="review-quote">❝</span><p>"Great coffee, lovely interiors, and the vegetarian menu is surprisingly diverse. The Ferrero Rocher Shake is worth every rupee."</p><div class="review-footer"><span class="review-avatar" style="background:#5c3d2e">RP</span><div><strong>Rohit P.</strong><div class="review-meta"><span class="review-stars">★★★★</span><span>2 weeks ago</span></div></div></div></div>
+    </div>
+    <div class="reviews-cta reveal"><a href="https://maps.google.com/?q=Love+Over+Coffee+Vijay+Nagar+Indore" target="_blank" rel="noopener noreferrer">Read all 805 reviews on Google ↗</a></div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══════════════════════════════════════════════════════ -->
+<section id="contact" class="section-pad contact-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Visit Us</span>
+      <h2>We'd Love to See You</h2>
+      <p>Find us in Vijay Nagar, Indore — open every day from morning till midnight.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="https://maps.google.com/?q=PLOT+NO+11+Scheme+No+51+Scheme+No+113+Indore+Madhya+Pradesh+452010&t=k" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-icon">📍</span>
+          <div><h4>Address</h4><p>Plot No 11, Scheme No 51, Scheme No 113,<br />Vijay Nagar, Indore, Madhya Pradesh 452010</p><span class="contact-link">🧭 Open in Google Maps (Satellite View)</span></div>
+        </a>
+        <a href="tel:+919329697769" class="contact-card">
+          <span class="contact-icon">📞</span>
+          <div><h4>Phone</h4><span class="contact-phone">+91 93296 97769</span><p class="contact-sub">Tap to call directly</p></div>
+        </a>
+        <div class="contact-card no-hover">
+          <span class="contact-icon">🕙</span>
+          <div style="flex:1">
+            <div class="hours-header"><h4>Opening Hours</h4><span id="open-status" class="status-open">Open Now</span></div>
+            <table class="hours-table">
+              <tr class="hours-row" data-day="Monday"><td>Monday</td><td>9:30 AM – 12:30 AM</td></tr>
+              <tr class="hours-row" data-day="Tuesday"><td>Tuesday</td><td>9:30 AM – 12:30 AM</td></tr>
+              <tr class="hours-row" data-day="Wednesday"><td>Wednesday</td><td>9:30 AM – 12:30 AM</td></tr>
+              <tr class="hours-row" data-day="Thursday"><td>Thursday</td><td>9:30 AM – 12:30 AM</td></tr>
+              <tr class="hours-row" data-day="Friday"><td>Friday</td><td>9:30 AM – 12:30 AM</td></tr>
+              <tr class="hours-row" data-day="Saturday"><td>Saturday</td><td>9:30 AM – 12:30 AM</td></tr>
+              <tr class="hours-row" data-day="Sunday"><td>Sunday</td><td>9:30 AM – 12:30 AM</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a href="https://maps.google.com/?q=PLOT+NO+11+Scheme+No+51+Scheme+No+113+Indore+Madhya+Pradesh+452010&t=k" target="_blank" rel="noopener noreferrer" class="btn-olive">🧭 Get Directions</a>
+          <a href="tel:+919329697769" class="btn-outline-olive">📞 Call Now</a>
+        </div>
+      </div>
+      <div class="contact-map reveal">
+        <div class="map-embed">
+          <iframe title="Love Over Coffee – Vijay Nagar, Indore" src="https://maps.google.com/maps?q=Love+Over+Coffee+Vijay+Nagar+Indore&output=embed&z=16" width="100%" height="100%" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="popular-times">
+          <div class="pt-header"><span>📈</span><h4>Popular Times Today</h4><span class="pt-note">Typically busiest 7–10 PM</span></div>
+          <div class="pt-bars">
+            <div class="pt-bar"><div class="pt-inner low" style="height:15%"></div><span>9 AM</span></div>
+            <div class="pt-bar"><div class="pt-inner low" style="height:30%"></div><span>11 AM</span></div>
+            <div class="pt-bar"><div class="pt-inner mid" style="height:60%"></div><span>1 PM</span></div>
+            <div class="pt-bar"><div class="pt-inner mid" style="height:55%"></div><span>3 PM</span></div>
+            <div class="pt-bar"><div class="pt-inner mid" style="height:75%"></div><span>5 PM</span></div>
+            <div class="pt-bar"><div class="pt-inner high" style="height:95%"></div><span>7 PM</span></div>
+            <div class="pt-bar"><div class="pt-inner high" style="height:100%"></div><span>9 PM</span></div>
+            <div class="pt-bar"><div class="pt-inner mid" style="height:70%"></div><span>11 PM</span></div>
+            <div class="pt-bar"><div class="pt-inner low" style="height:35%"></div><span>12 AM</span></div>
+          </div>
+          <p class="pt-note-bottom">Evening hours (7–11 PM) are peak. Visit mornings or early afternoons for a calmer experience.</p>
+        </div>
+        <div class="plus-code"><span class="plus-icon">📍</span><div><p>Plus Code</p><strong>QV6J+Q8 Indore, Madhya Pradesh</strong></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="assets/logo.png" alt="Love Over Coffee" class="footer-logo" />
+      <p class="footer-brand">Love Over Coffee</p>
+      <p class="footer-tagline">Vijay Nagar · Indore</p>
+      <p class="footer-desc">A cozy vegetarian café crafting specialty coffee, comfort food, and lasting memories.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/loveovercoffee.indore" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📸</a>
+        <a href="https://www.zomato.com/indore/love-over-coffee-vijay-nagar/order" target="_blank" rel="noopener noreferrer" aria-label="Zomato">🍽</a>
+        <a href="tel:+919329697769" aria-label="Call">📞</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#home">Home</a></li><li><a href="#highlights">Highlights</a></li>
+        <li><a href="#menu">Menu</a></li><li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Most Loved</h5>
+      <ul>
+        <li><a href="#menu">Cappuccino — ₹130</a></li>
+        <li><a href="#menu">Tiramisu Frappe — ₹200</a></li>
+        <li><a href="#menu">Cheese Fondue — ₹320</a></li>
+        <li><a href="#menu">Tandoori Paneer Pizza — ₹360</a></li>
+        <li><a href="#menu">Biscoff Cappuccino — ₹160</a></li>
+        <li><a href="#menu">Peri Peri Fries — ₹180</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Get in Touch</h5>
+      <p>📍 Plot No 11, Scheme No 51, Vijay Nagar, Indore, MP 452010</p>
+      <p><a href="tel:+919329697769">📞 +91 93296 97769</a></p>
+      <p>🕙 Open 9:30 AM – 12:30 AM · Every Day</p>
+      <div class="footer-order">
+        <a href="https://www.zomato.com/indore/love-over-coffee-vijay-nagar/order" target="_blank" rel="noopener noreferrer" class="btn-zomato sm">Zomato</a>
+        <a href="https://www.swiggy.com/city/indore/love-over-coffee-vijay-nagar-rest764666?is_retargeting=true&media_source=GooglePlaceOrder" target="_blank" rel="noopener noreferrer" class="btn-swiggy sm">Swiggy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2024 Love Over Coffee. All rights reserved. · 100% Vegetarian · Vijay Nagar, Indore</div>
+</footer>
+
+<!-- ══ STICKY BAR ════════════════════════════════════════════════════ -->
+<div id="sticky-bar">
+  <a href="tel:+919329697769" class="sticky-btn sticky-call"><span>📞</span><span>Call</span></a>
+  <a href="https://www.zomato.com/indore/love-over-coffee-vijay-nagar/order" target="_blank" rel="noopener noreferrer" class="sticky-btn sticky-zomato"><span>🛍</span><span>Zomato</span></a>
+  <a href="#contact" class="sticky-btn sticky-reserve"><span>🪑</span><span>Reserve</span></a>
+  <a href="#menu" class="sticky-btn sticky-menu"><span>🍽</span><span>Menu</span></a>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
