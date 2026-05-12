@@ -808,3 +808,5 @@ h1, h2, h3, h4 { font-family: var(--font-heading); }
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: none; }
 }
+
+/* Patch 2.0.0 */

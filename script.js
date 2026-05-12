@@ -165,3 +165,5 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// Patch 2.0.0
