@@ -63,3 +63,7 @@ const sampleResponse = { success: true, code: 200 };
 
 /* Virtual Scroll Notes */
 // Recycle DOM nodes for long lists
+
+
+/* MSW Setup */
+// MSW mock handlers configured for integration tests
