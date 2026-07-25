@@ -47,3 +47,7 @@ const observerOptions = { rootMargin: '50px 0px', threshold: 0.1 };
 
 /* Icon Inlining Notes */
 // System SVG icons inlined for instant render
+
+
+/* Event Listener Binding */
+const handleResize = () => { /* viewport update */ };
