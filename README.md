@@ -51,3 +51,7 @@ const observerOptions = { rootMargin: '50px 0px', threshold: 0.1 };
 
 /* Event Listener Binding */
 const handleResize = () => { /* viewport update */ };
+
+
+/* Font Display Standard */
+@font-face { font-display: swap; }
