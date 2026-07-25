@@ -35,3 +35,7 @@ Love Over Coffee is a cozy indoor vegetarian cafe in Vijay Nagar, Indore. This s
 
 ## Schema Validation
 - Strict runtime data validation for incoming inputs.
+
+
+## Web Vitals
+- Reserve image dimensions in HTML markup to prevent CLS.
