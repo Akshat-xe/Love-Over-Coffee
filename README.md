@@ -55,3 +55,7 @@ const handleResize = () => { /* viewport update */ };
 
 /* Font Display Standard */
 @font-face { font-display: swap; }
+
+
+/* Test Fixture */
+const sampleResponse = { success: true, code: 200 };
