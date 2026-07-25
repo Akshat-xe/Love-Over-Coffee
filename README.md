@@ -67,3 +67,7 @@ const sampleResponse = { success: true, code: 200 };
 
 /* MSW Setup */
 // MSW mock handlers configured for integration tests
+
+
+/* Script Loading */
+// Use <script defer> for non-blocking execution
